@@ -1,0 +1,120 @@
+/* ProductList.css */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px; /* Tasarıma uygun olarak artırıldı */
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.product-card {
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  box-shadow: 100 4px 80px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+  margin-bottom: 30px; /* Kartlar arasındaki boşluk artırıldı */
+  margin: 0 20px; /* Her iki yandan 20px boşluk ekler */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product-info {
+  margin-top: 10px;
+  font-family: 'Avenir', sans-serif;
+}
+
+.color-options {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.color-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #e0e0e0;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-button:hover {
+  transform: scale(1.2);
+}
+
+.color-button.yellow {
+  background-color: #E6CA97; /* Yellow Gold */
+}
+
+.color-button.white {
+  background-color: #D9D9D9; /* White Gold */
+}
+
+.color-button.rose {
+  background-color: #E1A4A9; /* Rose Gold */
+}
+
+.color-button.selected {
+  border: 2px solid #000;
+}
+
+
+.product-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* Fiyat Kısmı İçin */
+.price {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+/* Popularity Skoru İçin */
+.score {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/* Seçili Renk Bilgisi İçin */
+.selected-color-label {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+.score-star-container {
+  display: flex;
+  align-items: center; /* Yatay olarak hizalar */
+  justify-content: center; /* Yatayda ortalar */
+  gap: 8px; /* Skor ve yıldızlar arasına boşluk ekler */
+  width: 100%; /* Konteyner genişliğini ayarlar */
+}
+.product-list-title {
+  font-family: 'Avenir', sans-serif;
+  text-align: center;
+  font-weight: 300; /* Avenir Book 45 genellikle bu ağırlığı ifade eder */
+  font-size: 50px;
+  margin-bottom: 110px; /* Başlığın alt tarafına boşluk ekler */
+  margin-top: 125px; /* Başlığın alt tarafına boşluk ekler */
+}
+
